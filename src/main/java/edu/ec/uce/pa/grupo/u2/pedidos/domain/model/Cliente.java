@@ -29,7 +29,12 @@ public class Cliente {
 
     @Column(name = "clie_direccion")
     private String direccion;
-    
+
+    @Override
+    public String toString() {
+        return "Cliente [id=" + id + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono
+                + ", direccion=" + direccion + "]";
+    }
     public Integer getId() {
         return id;
     }

@@ -30,6 +30,11 @@ public class Distribuidor {
     @Column(name = "dist_direccion") 
     private String direccion;
     
+    @Override
+    public String toString() {
+        return "Distribuidor [id=" + id + ", nombre=" + nombre + ", ruc=" + ruc + ", telefono=" + telefono
+                + ", direccion=" + direccion + "]";
+    }
     public Integer getId() {
         return id;
     }

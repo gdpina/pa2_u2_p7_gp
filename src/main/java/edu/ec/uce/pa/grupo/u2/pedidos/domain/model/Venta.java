@@ -30,6 +30,12 @@ public class Venta {
 
     @Column(name = "vent_estado")
     private String estado;
+
+    @Override
+    public String toString() {
+        return "Venta [id=" + id + ", numeroVenta=" + numeroVenta + ", fecha=" + fecha + ", total=" + total
+                + ", estado=" + estado + "]";
+    }
     
     public Integer getId() {
         return id;

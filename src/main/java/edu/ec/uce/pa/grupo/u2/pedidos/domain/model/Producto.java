@@ -30,6 +30,12 @@ public class Producto {
     @Column(name = "prod_presentacion") 
     private String presentacion;
     
+    @Override
+    public String toString() {
+        return "Producto [id=" + id + ", nombre=" + nombre + ", precio=" + precio + ", stock=" + stock
+                + ", presentacion=" + presentacion + "]";
+    }
+    
     public Integer getId() {
         return id;
     }

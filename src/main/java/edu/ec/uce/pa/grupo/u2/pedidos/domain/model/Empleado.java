@@ -30,6 +30,12 @@ public class Empleado {
     @Column(name = "empl_salario") 
     private double salario;
     
+    @Override
+    public String toString() {
+        return "Empleado [id=" + id + ", nombre=" + nombre + ", cedula=" + cedula + ", cargo=" + cargo + ", salario="
+                + salario + "]";
+    }
+    
     public Integer getId() {
         return id;
     }
